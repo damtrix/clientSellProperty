@@ -29,19 +29,19 @@ const Navigation = () => {
   return (
     <Fragment>
       <NavigationContainer>
-        <LogoContainer to='/'>
+        <LogoContainer to='/clientSellProperty'>
           <CrwnLogo />
           <LogoName>sellProperty</LogoName>
         </LogoContainer>
         <NavLinks>
-          <NavLink to='/buy'>BUY</NavLink>
+          <NavLink to='/clientSellProperty/buy'>BUY</NavLink>
 
           {currentUser ? (
             <NavLink as='span' onClick={signOutUser}>
               SIGN OUT
             </NavLink>
           ) : (
-            <NavLink to='/auth'>SIGN IN</NavLink>
+            <NavLink to='/clientSellProperty/auth'>SIGN IN</NavLink>
           )}
           <CartIcon />
         </NavLinks>

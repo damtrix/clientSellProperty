@@ -27,11 +27,11 @@ const App = () => {
 
   return (
     <Routes>
-      <Route path='/' element={<Navigation />}>
+      <Route path='/clientSellProperty' element={<Navigation />}>
         <Route index element={<Home />} />
-        <Route path='buy/*' element={<Buy />} />
-        <Route path='auth' element={<Authentication />} />
-        <Route path='checkout' element={<Checkout />} />
+        <Route path='/clientSellProperty/buy/*' element={<Buy />} />
+        <Route path='/clientSellProperty/auth' element={<Authentication />} />
+        <Route path='/clientSellProperty/checkout' element={<Checkout />} />
       </Route>
     </Routes>
   );
